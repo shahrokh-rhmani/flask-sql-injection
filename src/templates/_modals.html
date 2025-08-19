@@ -1,0 +1,222 @@
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered login-popup-main">
+        <div class="modal-content border-0 shadow overflow-hidden rounded">
+            <div class="modal-body p-0">
+                <div class="login-popup">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row g-0">
+                        <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image1"></div>
+                        <div class="col-md-8 col-lg-8 py-lg-5">
+                            <div class="login p-5">
+                                <div class="mb-4 pb-2">
+                                    <h5 class="mb-2 fw-bold">Hey! what's your number?</h5>
+                                    <p class="text-muted mb-0">Please login with this number the next time you sign-in
+                                    </p>
+                                </div>
+                                <form>
+                                    <div class="input-group bg-white border rounded mb-3 p-2">
+                                        <span class="input-group-text bg-white border-0"><i
+                                                class="bi bi-phone pe-2"></i> +91 </span>
+                                        <input type="text" class="form-control bg-white border-0 ps-0"
+                                            placeholder="Enter phone number">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label small text-muted border-end pe-1"
+                                            for="exampleCheck1">I accept the Terms of use & Privacy Policy</label>
+                                        <a href="#" class="text-decoration-none text-success small">View T&C <i
+                                                class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </form>
+                                <button class="btn btn-success btn-lg py-3 px-4 text-uppercase w-100 mt-4"
+                                    data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Get OTP <i
+                                        class="bi bi-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered login-popup-main">
+        <div class="modal-content border-0 shadow overflow-hidden rounded">
+            <div class="modal-body p-0">
+                <div class="login-popup">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row g-0">
+                        <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image1"></div>
+                        <div class="col-md-8 col-lg-8 py-lg-5">
+                            <div class="login p-5">
+                                <div class="mb-4 pb-2">
+                                    <h5 class="mb-2 fw-bold">Confirm your number</h5>
+                                    <p class="text-muted mb-0">Enter the 4 digit OTP we've sent by SMS to 123456-78909
+                                        <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                            class="text-success text-decoration-none" href="#"><i
+                                                class="bi bi-pencil-square"></i> Edit</a>
+                                    </p>
+                                </div>
+                                <form>
+                                    <div class="d-flex gap-3 text-center">
+                                        <div class="input-group bg-white border rounded mb-3 p-2">
+                                            <input type="text" value="1"
+                                                class="form-control bg-white border-0 text-center">
+                                        </div>
+                                        <div class="input-group bg-white border rounded mb-3 p-2">
+                                            <input type="text" value="3"
+                                                class="form-control bg-white border-0 text-center">
+                                        </div>
+                                        <div class="input-group bg-white border rounded mb-3 p-2">
+                                            <input type="text" value="1"
+                                                class="form-control bg-white border-0 text-center">
+                                        </div>
+                                        <div class="input-group bg-white border rounded mb-3 p-2">
+                                            <input type="text" value="3"
+                                                class="form-control bg-white border-0 text-center">
+                                        </div>
+                                    </div>
+                                    <div class="form-check ps-0">
+                                        <label class="small text-muted">Resend OTP in 0:55</label>
+                                    </div>
+                                </form>
+                                <button class="btn btn-success btn-lg py-3 px-4 text-uppercase w-100 mt-4"
+                                    data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Get OTP <i
+                                        class="bi bi-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header p-4 border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="text-center mb-5 pb-2">
+                    <div class="mb-3"><img src="{{ url_for('static', filename='assets/img/login2.png') }}" class="col-6 mx-auto" alt="">
+
+                    </div>
+                    <h5 class="mb-2">Have a Referral or Invite Code?</h5>
+                    <p class="text-muted">Use code GET50 to earn 50 Bodegaa Cash</p>
+                </div>
+                <form>
+                    <label class="form-label">Enter your referral/invite code</label>
+                    <div class="input-group mb-2 border rounded-3 p-1">
+                        <span class="input-group-text border-0 bg-white"><i
+                                class="bi bi bi-ticket-perforated  text-secondary"></i></span>
+                        <input type="text" class="form-control border-0 bg-white ps-1" placeholder="Enter the code">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer px-4 pb-4 pt-0 border-0">
+                <button class="btn btn-success btn-lg py-3 px-4 text-uppercase  w-100 m-0"
+                    data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Claim Bodegaa Cash</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header p-4 border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <div class="mb-5"><img src="{{ url_for('static', filename='assets/img/login3.png') }}" alt="" class="col-6 mx-auto">
+                        </div>
+                        <div class="my-3">
+                            <h5 class="fw-bold">You got &#8377;50.0 Bodegaa Cash!</h5>
+                            <p class="text-muted h6">use this Bodegaa Cash to save on your next orders</p>
+                        </div>
+                        <div class="my-4">
+                            <p class="small text-muted mb-0">Your Bodegaa Cash will expire in</p>
+                            <div class="h5 text-success">6d:23h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer px-4 pb-4 pt-0 border-0">
+                <a href="index.html" class="btn btn-success btn-lg py-3 px-4 text-uppercase w-100 m-0">Tap to order</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="add-delivery-location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header px-4">
+                <h5 class="h6 modal-title fw-bold">Add Your Location</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form>
+                    <div class="input-group border p-1 overflow-hidden osahan-search-icon shadow-sm rounded mb-3">
+                        <span class="input-group-text bg-white border-0"><i class="icofont-search"></i></span>
+                        <input type="text" class="form-control bg-white border-0 ps-0"
+                            placeholder="Search for area, location name">
+                    </div>
+                </form>
+                <div class="mb-4">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close"
+                        class="text-success d-flex gap-2 text-decoration-none fw-bold">
+                        <i class="bi bi-compass text-success"></i>
+                        <div>Use Current Location</div>
+                    </a>
+                </div>
+                <div class="text-muted text-uppercase small">Search Results</div>
+                <div>
+                    <div data-bs-dismiss="modal" class="d-flex align-items-center gap-3 border-bottom py-3">
+                        <i class="icofont-search h6"></i>
+                        <div>
+                            <p class="mb-1 fw-bold">Bangalore</p>
+                            <p class="text-muted small m-0">Karnataka, India</p>
+                        </div>
+                    </div>
+                    <div data-bs-dismiss="modal" class="d-flex align-items-center gap-3 border-bottom py-3">
+                        <i class="icofont-search h6"></i>
+                        <div>
+                            <p class="mb-1 fw-bold">Bangalore internaltional airport</p>
+                            <p class="text-muted small m-0">Karmpegowda.in't Airport, Hunachur, karnataka, India</p>
+                        </div>
+                    </div>
+                    <div data-bs-dismiss="modal" class="d-flex align-items-center gap-3 border-bottom py-3">
+                        <i class="icofont-search h6"></i>
+                        <div>
+                            <p class="mb-1 fw-bold">Railway Station back gate</p>
+                            <p class="text-muted small m-0">M.G. Railway Colony, Majestic, Bangaluru, Karnataka.</p>
+                        </div>
+                    </div>
+                    <div data-bs-dismiss="modal" class="d-flex align-items-center gap-3 border-bottom py-3">
+                        <i class="icofont-search h6"></i>
+                        <div>
+                            <p class="mb-1 fw-bold">Bangalore Cant</p>
+                            <p class="text-muted small m-0">Cantonent Railway Station Road, Contonment Railway.</p>
+                        </div>
+                    </div>
+                    <div data-bs-dismiss="modal" class="d-flex align-items-center gap-3 py-3">
+                        <i class="icofont-search h6"></i>
+                        <div>
+                            <p class="mb-1 fw-bold">Bangalore Contonement Railway Station</p>
+                            <p class="text-muted small m-0">Contonement Railway Quarters, Shivaji nagar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
